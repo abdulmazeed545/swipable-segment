@@ -1,24 +1,171 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Eca-Rg-tmI">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Yellow-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="swipable_segment" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="bgv-qK-W57">
+                                <rect key="frame" x="0.0" y="44" width="414" height="769"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" id="Kco-1g-z2F">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Kco-1g-z2F" id="Cfj-xV-mem">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="rpW-EH-qSe"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="0o1-rt-yg1"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemYellowColor"/>
+                        <constraints>
+                            <constraint firstItem="bgv-qK-W57" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="BYC-d8-w3X"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="bgv-qK-W57" secondAttribute="trailing" id="CFs-Wb-zRY"/>
+                            <constraint firstItem="bgv-qK-W57" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="PRS-wk-fg5"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="bgv-qK-W57" secondAttribute="bottom" id="gXi-Lt-yS6"/>
+                        </constraints>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Yellow" id="Jvb-zv-fdD"/>
+                    <connections>
+                        <outlet property="tableView" destination="bgv-qK-W57" id="fw7-Yl-ue9"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="1360.8695652173915" y="137.94642857142856"/>
+        </scene>
+        <!--Pink-->
+        <scene sceneID="Ldr-bj-rHJ">
+            <objects>
+                <viewController id="W2W-Os-4u0" customClass="ViewController" customModule="swipable_segment" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="mjT-XD-gZY">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="vsD-q3-3hL"/>
+                        <color key="backgroundColor" systemColor="systemPinkColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Pink" id="4LU-5K-x13"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jwK-10-aVX" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1379.7101449275362" y="2069.8660714285716"/>
+        </scene>
+        <!--Purple-->
+        <scene sceneID="hA7-mv-eVE">
+            <objects>
+                <viewController id="aks-WQ-pPN" customClass="ViewController" customModule="swipable_segment" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="4hz-nS-j33">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="yvb-hc-laa"/>
+                        <color key="backgroundColor" systemColor="systemPurpleColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Purple" id="iWI-yo-eWH"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kbV-4E-Fvq" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1381.1594202898552" y="1425.6696428571429"/>
+        </scene>
+        <!--Blue-->
+        <scene sceneID="fMQ-8J-Qza">
+            <objects>
+                <viewController id="Ibg-Ky-B75" customClass="BlueVC" customModule="swipable_segment" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="QnJ-V8-P1F">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="gDH-Zh-Gda">
+                                <rect key="frame" x="0.0" y="44" width="414" height="769"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" id="LIq-0e-WCq">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="LIq-0e-WCq" id="AGz-zC-Pko">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="Ibg-Ky-B75" id="McX-y2-OQR"/>
+                                    <outlet property="delegate" destination="Ibg-Ky-B75" id="em9-oi-xXN"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Crr-aY-g93"/>
+                        <color key="backgroundColor" systemColor="systemTealColor"/>
+                        <constraints>
+                            <constraint firstItem="Crr-aY-g93" firstAttribute="bottom" secondItem="gDH-Zh-Gda" secondAttribute="bottom" id="DCp-cB-GQJ"/>
+                            <constraint firstItem="gDH-Zh-Gda" firstAttribute="top" secondItem="Crr-aY-g93" secondAttribute="top" id="Han-kB-EXa"/>
+                            <constraint firstItem="gDH-Zh-Gda" firstAttribute="leading" secondItem="Crr-aY-g93" secondAttribute="leading" id="hee-0O-mNL"/>
+                            <constraint firstItem="Crr-aY-g93" firstAttribute="trailing" secondItem="gDH-Zh-Gda" secondAttribute="trailing" id="ni5-r0-Aph"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Blue" id="KJL-Yl-xQS"/>
+                    <connections>
+                        <outlet property="tableView" destination="gDH-Zh-Gda" id="kWO-rK-Ach"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Bjt-p4-34n" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1381.1594202898552" y="775.44642857142856"/>
+        </scene>
+        <!--Tab BarVC-->
+        <scene sceneID="kXi-wv-frY">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="Eca-Rg-tmI" customClass="TabBarVC" customModule="swipable_segment" customModuleProvider="target" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="uUD-Ue-1wP">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="yKG-O9-JTS"/>
+                        <segue destination="Ibg-Ky-B75" kind="relationship" relationship="viewControllers" id="MIR-4l-7GT"/>
+                        <segue destination="aks-WQ-pPN" kind="relationship" relationship="viewControllers" id="VL2-WE-U8w"/>
+                        <segue destination="W2W-Os-4u0" kind="relationship" relationship="viewControllers" id="Oaa-ra-LrQ"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="taQ-Yr-poY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="450.72463768115944" y="1103.5714285714284"/>
         </scene>
     </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemPinkColor">
+            <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemPurpleColor">
+            <color red="0.68627450980392157" green="0.32156862745098042" blue="0.87058823529411766" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemTealColor">
+            <color red="0.35294117647058826" green="0.78431372549019607" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
 </document>

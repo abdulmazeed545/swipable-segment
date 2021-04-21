@@ -13,6 +13,8 @@
 		04519D6A262FE3A200899849 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04519D68262FE3A200899849 /* Main.storyboard */; };
 		04519D6C262FE3BC00899849 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04519D6B262FE3BC00899849 /* Assets.xcassets */; };
 		04519D6F262FE3BC00899849 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04519D6D262FE3BC00899849 /* LaunchScreen.storyboard */; };
+		04519D78262FEF8100899849 /* TabBarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04519D77262FEF8100899849 /* TabBarVC.swift */; };
+		04519D7B263001D500899849 /* BlueVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04519D7A263001D500899849 /* BlueVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		04519D6B262FE3BC00899849 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		04519D6E262FE3BC00899849 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		04519D70262FE3BC00899849 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		04519D77262FEF8100899849 /* TabBarVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarVC.swift; sourceTree = "<group>"; };
+		04519D7A263001D500899849 /* BlueVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlueVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +67,8 @@
 				04519D6B262FE3BC00899849 /* Assets.xcassets */,
 				04519D6D262FE3BC00899849 /* LaunchScreen.storyboard */,
 				04519D70262FE3BC00899849 /* Info.plist */,
+				04519D77262FEF8100899849 /* TabBarVC.swift */,
+				04519D7A263001D500899849 /* BlueVC.swift */,
 			);
 			path = "swipable-segment";
 			sourceTree = "<group>";
@@ -139,7 +145,9 @@
 			files = (
 				04519D67262FE3A200899849 /* ViewController.swift in Sources */,
 				04519D63262FE3A200899849 /* AppDelegate.swift in Sources */,
+				04519D78262FEF8100899849 /* TabBarVC.swift in Sources */,
 				04519D65262FE3A200899849 /* SceneDelegate.swift in Sources */,
+				04519D7B263001D500899849 /* BlueVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
